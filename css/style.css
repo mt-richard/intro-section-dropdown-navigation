@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+
+* {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1:hsl(0, 0%, 41%);
+    --color2:hsl(0, 0%, 98%);
+    --color3: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color:  var(--color2);
+}
+.navigation{
+    display: flex;
+    padding: 1rem 4rem;
+
+}
+.logo{
+    padding-left: 0rem;
+    width:5.6rem;
+}
+.logo .log{
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    margin-top: .6rem;
+
+     
+}
+.links{
+    text-align: center;
+}
+.links ul {
+    display: inline-flex;
+    list-style: none;
+    
+}
+.links ul li {
+    width: 6rem;
+    margin: .6rem;
+    padding: .3rem 1.5rem;
+}
+.links ul li a{
+    font-size: 1rem;
+    color:  var(--color1);
+    font-weight: 500;
+    text-decoration: none;
+}
+.active,
+.links ul li:hover > a{
+    color: var(--color3);
+    font-weight: 700;
+}
+
+.sub-links {
+    display: none;
+    background-color:  var(--color2);
+    border-radius: .5rem;
+    margin-top: .4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.sub-links ul li{
+    width: 200px;
+    margin-left: -1rem;
+}
+.sub-links img{
+    margin: 0rem 1rem;
+}
+.links ul li:hover > .sub-links {
+    display: block;
+    position: absolute;
+    width: 180px;
+}
+.links ul li:hover > .sub-links ul{
+    display: block;
+    text-align: left;
+    padding: 0 .7rem;
+    
+}
+
+.btns{
+    text-align: right;
+    width: 45rem;
+}
+.btns ul{
+    display: inline-flex;
+    list-style: none;
+}
+.btns ul li{
+    margin-left: 1rem;
+    width: 7rem;
+    text-align: center;
+}
+.btns ul li a{
+    text-decoration: none;
+    color:  var(--color1);
+    font-weight: 500;
+}
+.btns ul li:hover > a{
+    color: var(--color3);
+    font-weight: 700;
+}
+
+.btns  .reg{
+    text-align: center;
+    border: 1px solid   var(--color1);
+    border-radius: 15px;
+    padding: 1rem;
+} 
+.btns  .log{
+    text-align: center;
+    padding: 1rem;
+} 
+.btns  .reg:hover{
+    border: 2px solid  var(--color3);;
+}
+
+.main{
+    display: flex;
+    padding: 2rem 3rem;
+}
+.main .left{
+    padding:6.5rem 9rem;
+    width:60%;
+}
+.main .right{
+    width:40%;
+}
+.main .left span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .2rem;
+    line-height: 4rem;
+    font-size:80px;
+    font-weight: 900;   
+}
+.main .left p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color1);
+    line-height: 1.7rem;
+ 
+}
+
+.main .right .img{
+     width: 28rem;
+    height: 35rem; 
+    background-image: url("../images/image-hero-desktop.png");
+    background-size: cover;
+}
+
+.footer{
+    margin-top: 3rem;
+}
+.footer img{
+    margin: 1.4rem;
+}
+
+.learn{
+    background: var(--color3);
+    border-radius: 13px;
+    padding: 1rem 2rem;
+    color: var(--color2);
+    font-weight: 700;
+    margin-top:2rem;
+    letter-spacing: 2px;
+}
+
+.bod{
+    margin-top:3rem;
+}
